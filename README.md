@@ -9,6 +9,21 @@ repository must be given on the command line. A list of paths to extract
 may given on command line or in one or more input file(s). It is also possible
 to skip the revision history before a given starting revision.
 
+PROJECT STATUS
+--------------
+
+This project is no longer maintained. There was no general interest in this
+for a long time. In case that someone needs to make it work with modern
+software versions:
+
+* This project has no special requirements on Python an should work
+  with any recent version of Python 3.
+* Most likely this software will fail with present versions of
+  Subversion because it fails to parse error messages. That part
+  of the code is covered well by the tests in the integration\_tests.
+  Once these tests have been fixed by relaxing/expanding the regular
+  expressions to parse Subversion's messages it should run fine.
+
 COMPATIBILITY
 -------------
 
@@ -22,7 +37,7 @@ INSTALLATION
 Presently the preferred way of installation is via pip:
 
     sudo pip install svnfiltereddump
- 
+
 MANUAL INSTALLATION
 -------------------
 
